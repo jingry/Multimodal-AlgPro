@@ -1,21 +1,23 @@
-Multimodal-AlgPro
-=================
-Multimodal deep learning for allergenic proteins prediction
-=================
+# Multimodal-AlgPro
+## Multimodal deep learning for allergenic proteins prediction
 
-Author
-==================
+# Corresponding Author
 ljs@swmu.edu.cn
 
 
-Overview
-==================
-
+# Overview
 Multimodal-AlgPro is an advanced deep learning framework designed to enhance allergen prediction by integrating multimodal data sources. By combining sequence, composition, physicochemical properties, and evolutionary information, it delivers robust and accurate allergen predictions. The model employs a character-level convolutional neural network (CNN) to encode amino acid sequences and a densely connected network (DNN) to extract deeper insights from molecular features. Through systematic evaluation of 12 distinct unimodal models (CNN, AAC, AAC_PSSM, CTD, DC, DFMCA_PSSM, DP_PSSM,DPC_PSSM, Pse_PSSM, PSSM_AC,PSSM400, Single_Average) and 2,047 multimodal combinations (Additional file 5: Table S1), we identified the most successful configuration: 'CNN + DFMCA_PSSM + DPC_PSSM + PSSM400 + Single_Average'. This multimodal combination achieved outstanding performance, with average accuracy (93.1%), F-value (92.9%), recall (90.9%), precision (95.1%), MCC (0.863), auROC (0.976), and auPR (0.977). By considering complementary information from five modalities, the framework provides a comprehensive and highly effective approach to allergen prediction.
 
-Usage
-==================
-You can directly run the generateCMD.py file in the root directory to execute multimodal fusion tests. In this process, 2,047 model combinations are tested, each repeated five times. All results are stored in the "outs" folder, and a comprehensive summary of these results is provided in Table S1.csv, which contains data for all 2,047 combinations.
+# Usage
+## Preparation
+1) Download this repository, all the files are in the folder 'example/Multimodal-AlgPro'.
+
+2) Please download autobioseqpy at https://github.com/jingry/autoBioSeqpy/releases/tag/v2.0_20250715, we have generated a release version for this code.
+
+3) After download and unzipped the source file, please move/merge the folder 'examples' to the root of autobioseqpy, there will be a folder named examples as well, just merge them, the the code of this work will be in 'examples/Multimodal-AlgPro'.
+
+## Start to use
+You can directly run the generateCMD.py file in the 'example/Multimodal-AlgPro' directory to execute multimodal fusion tests. In this process, 2,047 model combinations are tested, each repeated five times. All results are stored in the "outs" folder, and a comprehensive summary of these results is provided in Table S1.csv, which contains data for all 2,047 combinations.
 
 python examples\Multimodal-AlgPro\generateCMD.py
 
