@@ -12,7 +12,7 @@ Multimodal-AlgPro is an advanced deep learning framework designed to enhance all
 ## Preparation
 1) Download this repository, all the files are in the folder 'example/Multimodal-AlgPro'.
 
-2) Please download autobioseqpy at https://github.com/jingry/autoBioSeqpy/releases/tag/v2.0_20250715, we have generated a release version for this code.
+2) Please download autobioseqpy at https://github.com/jingry/autoBioSeqpy/releases/tag/v2.0_20250715 (or doi: 10.5281/zenodo.15907131), we have generated a release version for this code.
 
 3) After download and unzipped the source file, please move/merge the folder 'examples' to the root of autobioseqpy, there will be a folder named examples as well, just merge them, the the code of this work will be in 'examples/Multimodal-AlgPro'.
 
